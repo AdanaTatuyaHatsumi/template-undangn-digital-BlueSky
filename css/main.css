@@ -1,0 +1,340 @@
+:root {
+    --colorText         : #252525;
+    --color-button      : #B19DDD;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.audio {
+    position: fixed;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: var(--Coklat);
+    cursor: pointer;
+    padding: 15px;
+}
+
+#play {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: var(--Coklat);
+    cursor: pointer;
+    padding: 15px;
+    animation: rotating 4s linear infinite;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-cta {
+    background-color: var(--color-button);
+    border-radius: 100px;
+    width: 220px;
+}
+
+.btn-cta:hover {
+    background-color: #9a82cf;
+}
+
+/* Index */
+.invitation {
+    background-image: url('../image/bg-primary.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+
+.invitation h1 {
+    color: var(--colorText);
+    font-family: 'Style Script';
+    font-size: 3rem;
+}
+
+.invitation img {
+    width: 250px;
+}
+
+.invitation h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.invitation p {
+    font-size: 1.3rem;
+}
+
+/* Udangan */
+.hero {
+    background-image: url('../image/bg-undangan.png');
+    background-size: cover;
+    padding-top: 8rem;
+    min-height: 100vh;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-family: 'Style Script';
+}
+
+.couple h3,
+.acara h3,
+.hadist h3,
+.ucapan h3,
+.thanks h3 {
+    font-family: 'Style Script';
+    font-size: 4rem;
+}
+
+.couple ,
+.acara,
+.hadist,
+.ucapan,
+.gifts,
+.thanks{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url('../image/bg-undangan\ without\ ornament.png');
+    background-size: cover;
+}
+
+.couple .img-ornament,
+.acara .img-ornament,
+.hadist .img-ornament,
+.ucapan .img-ornament,
+.thanks .img-ornament {
+    width: 230px;
+    border: none;
+}
+
+.couple img {
+    width: 100%;
+    border-radius: 100%;
+    border: #9a82cf 3px solid;
+}
+
+/* Acara */
+.acara {
+    min-height: 100vh;
+}
+
+.acara img {
+    width: 350px;
+}
+
+/* Hadist */
+.hadist {
+    min-height: 100vh;
+}
+
+/* Ucapan */
+.ucapan h5 {
+    font-weight: 600;
+    color: var(--color-button);
+}
+
+.ucapan .wrapper {
+    height: 50vh;
+    overflow: auto;
+}
+
+/* Thanks */
+.thanks img {
+    width: 5%;
+}
+
+.thanks .img-thanks {
+    width: 40%;
+}
+
+.thanks .nama-calon-pengantin {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.footer img{
+    width: 20%;
+}
+
+
+@media (max-width: 1100px) {
+    /* Invitation */
+    .invitation {
+        padding-top: 3rem;
+    }
+
+    .invitation img {
+        width: 250px;
+    }
+
+    /* couple */
+    .couple h3 {
+        font-size: 3rem;
+    }
+
+    /* Ucapan */
+    .ucapan .card{
+        width: 18rem;
+        margin: 5px;
+    }
+
+    /* Thanks */
+    .thanks .nama-calon-pengantin img {
+        width: 10%;
+    }
+}
+
+@media (max-width: 503px) {
+    /* Countdown */
+    .simply-countdown>.simply-section {
+        padding: 35px;
+    }
+
+    /* hero */
+    .hero {
+        padding-top: 11rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    /* Thanks */
+    .thanks .nama-calon-pengantin img {
+        width: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* acara */
+    br {
+        display: none;
+    }
+    .acara h3 {
+        font-size: 3rem;
+    }
+
+    /* Ucpaan */
+    .ucapan .card{
+        width: 15rem;
+        margin: 5px;
+    }
+
+    .ucapan .komen {
+        display: flex;
+    }
+
+    /* Thanks */
+    .thanks .nama-calon-pengantin img {
+        width: 10%;
+    }
+}
+
+@media (max-width: 383px) {
+    /* hero */
+    .hero {
+        padding-top: 12rem;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 25px;
+        margin: 7px;
+    }
+
+    .simply-countdown>.simply-section .simply-amount {
+        font-size: 0.9rem;
+    }
+
+    /* Hadist */
+    .hadist img,
+    .gifts img,
+    .thanks img {
+        width: 100%;
+    }
+
+    /* ucapan */
+    .ucapan h3,
+    .hadist h3,
+    .thanks h3 {
+        font-size: 3rem;
+    }
+
+    .ucapan h6, p {
+        font-size: 0.8rem;
+    }
+
+    .ucapan input {
+        font-size: 0.9rem;
+    }
+
+    /* Thanks */
+    .thanks .nama-calon-pengantin img {
+        width: 15%;
+    }
+
+    .thanks .img-thanks {
+        width: 100%;
+    }
+
+    .footer img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 320px) {
+    /* hero */
+    .hero {
+        padding-top: 14rem;
+    }
+
+    /* invitation */
+    .invitation {
+        padding-top: 4rem;
+    }
+
+    .invitation h3 {
+        font-size: 1.2rem;
+    }
+
+    .invitation h1 {
+        font-size: 2rem;
+    }
+
+    .invitation img {
+        width: 200px;
+    }
+
+    /* acara */
+    .acara h3 {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    /* Countdown */
+    .simply-countdown>.simply-section {
+        padding: 22px;
+    }
+
+    /* Thanks */
+    .thanks .nama-calon-pengantin img {
+        width: 20%;
+    }
+}
